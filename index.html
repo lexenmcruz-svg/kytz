@@ -5,32 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Jaja 💜</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&family=Pacifico&display=swap');
-
     body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom right, #e6d6f5, #f2e4ff);
+      color: #3b2d4a;
       margin: 0;
       padding: 0;
-      background: linear-gradient(135deg, #c7b8ea, #e6d6f8, #f7e8ff);
-      font-family: 'Quicksand', sans-serif;
-      color: #4a306d;
-      min-height: 100vh;
+      text-align: center;
     }
 
     header {
-      background: rgba(255, 255, 255, 0.6);
-      backdrop-filter: blur(8px);
-      padding: 20px 0;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-      position: sticky;
-      top: 0;
-      z-index: 10;
+      padding: 40px 0 20px;
+      background-color: rgba(255, 255, 255, 0.3);
+      backdrop-filter: blur(6px);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-bottom: 2px solid #d8b9ff;
     }
 
     h1 {
-      font-family: 'Pacifico', cursive;
-      color: #9a6aff;
-      font-size: 2.5em;
-      margin: 0;
+      font-size: 2.8em;
+      color: #a46bf5;
+      margin-bottom: 10px;
     }
 
     nav {
@@ -39,73 +34,83 @@
 
     nav a {
       text-decoration: none;
-      color: #5f4b8b;
-      margin: 0 20px;
-      font-weight: bold;
+      color: #5d4b8a;
+      margin: 0 18px;
+      font-weight: 600;
       font-size: 1.1em;
-      transition: color 0.3s;
+      position: relative;
     }
 
-    nav a:hover {
-      color: #a77af0;
+    nav a::after {
+      content: "";
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #a46bf5;
+      transition: 0.3s;
+    }
+
+    nav a:hover::after {
+      width: 100%;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
       gap: 20px;
-      padding: 50px 30px;
+      padding: 40px 30px;
       max-width: 1100px;
       margin: 0 auto;
     }
 
     .photo {
-      background-color: white;
-      border-radius: 20px;
+      background-color: rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
       padding: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .photo:hover {
-      transform: translateY(-5px);
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
     }
 
     .photo img {
       width: 100%;
-      border-radius: 15px;
+      border-radius: 12px;
+      height: auto;
     }
 
     .photo p {
-      font-size: 0.9em;
       margin-top: 8px;
-      color: #6d5b9e;
+      color: #5e4a88;
+      font-size: 0.95em;
+      font-style: italic;
     }
 
     .notes {
-      background: rgba(255,255,255,0.7);
-      border-radius: 25px;
-      max-width: 800px;
-      margin: 50px auto;
-      padding: 40px 30px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      text-align: center;
+      background-color: rgba(255, 255, 255, 0.65);
+      border-radius: 20px;
+      padding: 40px;
+      margin: 40px auto;
+      max-width: 850px;
       line-height: 1.8;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
     }
 
     .notes h2 {
-      color: #9a6aff;
-      font-family: 'Pacifico', cursive;
+      color: #a46bf5;
       margin-bottom: 15px;
     }
 
     footer {
-      text-align: center;
-      padding: 30px;
-      color: #6f5a8d;
+      margin: 40px 0;
       font-size: 0.9em;
+      color: #7a6ba8;
     }
-
   </style>
 </head>
 <body>
@@ -113,40 +118,33 @@
     <h1>My Jaja 💜</h1>
     <nav>
       <a href="#gallery">Gallery</a>
-      <a href="#notes">Notes</a>
+      <a href="#notes">Notes & Letters</a>
     </nav>
   </header>
 
   <section id="gallery" class="gallery">
-    <div class="photo">
-      <img src="images/pic1.jpg" alt="Jaja Photo 1">
-      <p>My favorite smile 💕</p>
-    </div>
-    <div class="photo">
-      <img src="images/pic2.jpg" alt="Jaja Photo 2">
-      <p>One of our sweetest moments ✨</p>
-    </div>
-    <div class="photo">
-      <img src="images/pic3.jpg" alt="Jaja Photo 3">
-      <p>Ang ganda mo dito, promise 💜</p>
-    </div>
-    <div class="photo">
-      <img src="images/pic4.jpg" alt="Jaja Photo 4">
-      <p>Memories I’ll always keep 🌸</p>
-    </div>
+    <div class="photo"><img src="pic1.jpg" alt="Jaja Photo 1"><p>My favorite smile 💕</p></div>
+    <div class="photo"><img src="pic2.jpg" alt="Jaja Photo 2"><p>Ganda mo dito, sobra 💜</p></div>
+    <div class="photo"><img src="pic3.jpg" alt="Jaja Photo 3"><p>This day was special ✨</p></div>
+    <div class="photo"><img src="pic4.jpg" alt="Jaja Photo 4"><p>Always my peace and happiness 💗</p></div>
+    <div class="photo"><img src="pic5.jpg" alt="Jaja Photo 5"><p>Your laughter hits different 😍</p></div>
+    <div class="photo"><img src="pic6.jpg" alt="Jaja Photo 6"><p>Moments like this, I’ll always keep 💜</p></div>
+    <div class="photo"><img src="pic7.jpg" alt="Jaja Photo 7"><p>You’re art, Jaja 💐</p></div>
+    <div class="photo"><img src="pic8.jpg" alt="Jaja Photo 8"><p>One of my happiest memories 🌷</p></div>
+    <div class="photo"><img src="pic9.jpg" alt="Jaja Photo 9"><p>Just you being you — perfect 💞</p></div>
+    <div class="photo"><img src="pic10.jpg" alt="Jaja Photo 10"><p>My favorite person, always 💫</p></div>
   </section>
 
   <section id="notes" class="notes">
-    <h2>For You 💌</h2>
-    <p>
-      Happy birthday, my Jaja. 💜<br>
-      These photos are some of my favorite memories — moments that remind me how lucky I am to have met you.<br>
-      Sa bawat ngiti mo, parang ang gaan ng mundo. Thank you for being my peace, my favorite person, and my reason to smile. 🌷
-    </p>
+    <h2>Notes & Letters 💌</h2>
+    <p>Happy birthday, my Jaja 🌸<br>
+    Every photo here reminds me of how lucky I am to have met you.  
+    You’re my calm in the noise, my soft place to land, and my favorite kind of beautiful.  
+    Ang saya ko lang na ikaw ‘yung kasama ko sa mga alaala kong ‘to. 💜</p>
   </section>
 
   <footer>
-    Made with love by Kytz 💕
+    Made with love by Kytz 💕 | © 2025
   </footer>
 </body>
 </html>
