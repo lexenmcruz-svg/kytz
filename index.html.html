@@ -5,102 +5,107 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Jaja 💜</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&family=Pacifico&display=swap');
+
     body {
-      font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to bottom right, #d7c4f3, #f3e8ff);
-      color: #3a2b55;
       margin: 0;
       padding: 0;
-      text-align: center;
+      background: linear-gradient(135deg, #c7b8ea, #e6d6f8, #f7e8ff);
+      font-family: 'Quicksand', sans-serif;
+      color: #4a306d;
+      min-height: 100vh;
     }
 
     header {
-      background-color: rgba(126, 87, 194, 0.8);
-      padding: 25px 0;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-      border-bottom-left-radius: 30px;
-      border-bottom-right-radius: 30px;
+      background: rgba(255, 255, 255, 0.6);
+      backdrop-filter: blur(8px);
+      padding: 20px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 10;
     }
 
     h1 {
-      font-size: 2.7em;
-      color: #fff;
-      text-shadow: 0 2px 5px rgba(0,0,0,0.2);
-      margin-bottom: 10px;
+      font-family: 'Pacifico', cursive;
+      color: #9a6aff;
+      font-size: 2.5em;
+      margin: 0;
     }
 
     nav {
-      background: rgba(255, 255, 255, 0.2);
-      backdrop-filter: blur(10px);
-      padding: 10px 0;
-      border-radius: 25px;
-      width: 60%;
-      margin: 0 auto;
+      margin-top: 10px;
     }
 
     nav a {
       text-decoration: none;
-      color: #f8e9ff;
+      color: #5f4b8b;
       margin: 0 20px;
-      font-weight: 600;
-      font-size: 1.05em;
-      transition: color 0.3s ease, text-shadow 0.3s ease;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #fff;
-      text-shadow: 0 0 10px #f3e8ff;
+      color: #a77af0;
     }
 
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
       gap: 20px;
-      padding: 50px;
-      max-width: 1000px;
+      padding: 50px 30px;
+      max-width: 1100px;
       margin: 0 auto;
     }
 
-    .gallery img {
-      width: 100%;
+    .photo {
+      background-color: white;
       border-radius: 20px;
-      box-shadow: 0 4px 20px rgba(100, 80, 150, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      padding: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
     }
 
-    .gallery img:hover {
-      transform: scale(1.05);
-      box-shadow: 0 6px 25px rgba(100, 80, 150, 0.3);
+    .photo:hover {
+      transform: translateY(-5px);
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 15px;
+    }
+
+    .photo p {
+      font-size: 0.9em;
+      margin-top: 8px;
+      color: #6d5b9e;
     }
 
     .notes {
-      background: rgba(255, 255, 255, 0.6);
+      background: rgba(255,255,255,0.7);
       border-radius: 25px;
-      padding: 40px;
-      margin: 40px auto;
       max-width: 800px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      margin: 50px auto;
+      padding: 40px 30px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
       line-height: 1.8;
     }
 
     .notes h2 {
-      color: #7e57c2;
-      font-size: 1.8em;
+      color: #9a6aff;
+      font-family: 'Pacifico', cursive;
+      margin-bottom: 15px;
     }
 
     footer {
-      margin: 50px 0;
+      text-align: center;
+      padding: 30px;
+      color: #6f5a8d;
       font-size: 0.9em;
-      color: #6a4cad;
     }
 
-    footer::before {
-      content: "🌙 ";
-    }
-
-    footer::after {
-      content: " 🌸";
-    }
   </style>
 </head>
 <body>
@@ -108,36 +113,36 @@
     <h1>My Jaja 💜</h1>
     <nav>
       <a href="#gallery">Gallery</a>
-      <a href="#notes">Notes & Letters</a>
+      <a href="#notes">Notes</a>
     </nav>
   </header>
 
   <section id="gallery" class="gallery">
-    <img src="images/pic1.jpg" alt="Miwo Photo 1">
-    <img src="images/pic2.jpg" alt="Miwo Photo 2">
-    <img src="images/pic3.jpg" alt="Miwo Photo 3">
-    <img src="images/pic4.jpg" alt="Miwo Photo 4">
-    <img src="images/pic5.jpg" alt="Miwo Photo 5">
-    <img src="images/pic6.jpg" alt="Miwo Photo 6">
-    <img src="images/pic7.jpg" alt="Miwo Photo 7">
-    <img src="images/pic8.jpg" alt="Miwo Photo 8">
-    <img src="images/pic9.jpg" alt="Miwo Photo 9">
-    <img src="images/pic10.jpg" alt="Miwo Photo 10">
-    <img src="images/pic11.jpg" alt="Miwo Photo 11">
-    <img src="images/pic12.jpg" alt="Miwo Photo 12">
-    <img src="images/pic13.jpg" alt="Miwo Photo 13">
-    <img src="images/pic14.jpg" alt="Miwo Photo 14">
-    <img src="images/pic15.jpg" alt="Miwo Photo 15">
-    <img src="images/pic16.jpg" alt="Miwo Photo 16">
-    <img src="images/pic17.jpg" alt="Miwo Photo 17">
-    <img src="images/pic18.jpg" alt="Miwo Photo 18">
+    <div class="photo">
+      <img src="images/pic1.jpg" alt="Jaja Photo 1">
+      <p>My favorite smile 💕</p>
+    </div>
+    <div class="photo">
+      <img src="images/pic2.jpg" alt="Jaja Photo 2">
+      <p>One of our sweetest moments ✨</p>
+    </div>
+    <div class="photo">
+      <img src="images/pic3.jpg" alt="Jaja Photo 3">
+      <p>Ang ganda mo dito, promise 💜</p>
+    </div>
+    <div class="photo">
+      <img src="images/pic4.jpg" alt="Jaja Photo 4">
+      <p>Memories I’ll always keep 🌸</p>
+    </div>
   </section>
 
   <section id="notes" class="notes">
-    <h2>Notes & Letters 💌</h2>
-    <p>Happy birthday, my Jaja. 💜<br>
-    You are my calm in the storm, my laughter in the silence, my favorite kind of peace.<br>
-    This page is just a tiny reflection of how much you mean to me. 🌷</p>
+    <h2>For You 💌</h2>
+    <p>
+      Happy birthday, my Jaja. 💜<br>
+      These photos are some of my favorite memories — moments that remind me how lucky I am to have met you.<br>
+      Sa bawat ngiti mo, parang ang gaan ng mundo. Thank you for being my peace, my favorite person, and my reason to smile. 🌷
+    </p>
   </section>
 
   <footer>
